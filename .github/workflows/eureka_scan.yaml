@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3        
       - name: Run Eureka DevSecOps GitHub Action Scan
-        uses: FWDSEC/eureka-scan-action@refactor-gh-action
+        uses: EurekaDevSecOps/scan-action@refactor-gh-action
         env:    
           EUREKA_AGENT_TOKEN: ${{ secrets.EUREKA_AGENT_TOKEN }}
           EUREKA_PROFILE_ID: ${{ vars.EUREKA_PROFILE_ID }}
