@@ -194,7 +194,8 @@ def load_menu(db: Session):
 
 
 def load_initial_data():
-    db = next(get_db())
+    db = next(get_db
+    console.log("Loading data")
 
     chef_user = db.query(User).filter(User.username == settings.CHEF_USERNAME).first()
     if chef_user:
